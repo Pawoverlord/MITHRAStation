@@ -224,6 +224,14 @@ var/list/_client_preferences_by_type
 	description ="Hear In-game Instruments"
 	key = "SOUND_INSTRUMENT"
 
+
+/datum/client_preference/darkmode
+	description = "Dark Mode"
+	key = "DARKMODE_PREF"
+	enabled_by_default = FALSE
+	enabled_description = "Dark"
+	disabled_description = "Light"
+
 /********************
 * Staff Preferences *
 ********************/
