@@ -1,7 +1,7 @@
 client/script = {"<style>
 body					{font-family: Verdana, sans-serif;}
 
-h1, h2, h3, h4, h5, h6	{color: #4747ff;font-family: Georgia, Verdana, sans-serif;} //#0000ff;
+h1, h2, h3, h4, h5, h6	{color: #4747ff;font-family: Georgia, Verdana, sans-serif;}
 
 em						{font-style: normal;font-weight: bold;}
 
@@ -18,7 +18,7 @@ em						{font-style: normal;font-weight: bold;}
 .ooc					{font-weight: bold;}
 .ooc img.text_tag		{width: 32px; height: 10px;}
 
-.ooc .everyone			{color: #0040ff;}	//#002eb8;}
+.ooc .everyone			{color: #3d6eff;}
 .ooc .looc				{color: #3A9696;}
 .ooc .elevated			{color: #2e78d9;}
 .ooc .moderator			{color: #184880;}
@@ -31,7 +31,7 @@ em						{font-style: normal;font-weight: bold;}
 .pm  .howto				{color: #ff0000;	font-weight: bold;		font-size: 200%;}
 .pm  .in				{color: #ff0000;}
 .pm  .out				{color: #ff0000;}
-.pm  .other				{color: #4747ff;}	//#0000ff;}
+.pm  .other				{color: #4747ff;}
 
 /* Admin: Channels */
 .mod_channel			{color: #735638;	font-weight: bold;}
@@ -40,8 +40,8 @@ em						{font-style: normal;font-weight: bold;}
 .event_channel			{color: #cc3399;	font-weight: bold;}
 
 /* Radio: Misc */
-.deadsay				{color: #7419eb;}	//#530FAD;}
-.radio					{color: #009e00;}	//#008000;}
+.deadsay				{color: #9956f0;}
+.radio					{color: #009e00;}
 .deptradio				{color: #ff00ff;}	/* when all other department colors fail */
 .newscaster				{color: #750000;}
 
@@ -79,8 +79,8 @@ h1.alert, h2.alert		{color: #000000;}
 .danger					{color: #ff0000; font-weight: bold;}
 .warning				{color: #ff0000; font-style: italic;}
 .rose					{color: #ff5050;}
-.info					{color: #4747ff;}	//#0000CC;}
-.notice					{color: #6666FF;}	//#000099;}
+.info					{color: #4747ff;}
+.notice					{color: #6666FF;}
 .alium					{color: #00ff00;}
 .cult					{color: #800080; font-weight: bold; font-style: italic;}
 
