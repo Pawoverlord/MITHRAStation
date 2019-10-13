@@ -263,6 +263,31 @@
 
 	feedback_add_details("admin_verb","THInstm") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
+//Mithradarkmode
+
+/client/verb/toggle_darkmode()
+	set name = "Toggle Darkmode"
+	set category = "Preferences"
+	set desc = "Changes the game window's background to be darker, thus sparing your gamer eyes from fiery hell."
+
+//	var/client/owner	 //client ref
+
+	var/pref_path = /datum/client_preference/darkmode
+	toggle_preference(pref_path)
+	SScharacter_setup.queue_preferences_save(prefs)
+
+	if(is_preference_enabled(/datum/client_preference/darkmode))
+		force_dark_theme()
+	else
+		force_white_theme()
+
+
+	to_chat(src, "Your eyes shall burn[(is_preference_enabled(/datum/client_preference/darkmode)) ? " no longer." : "!"]")
+
+	feedback_add_details("admin_verb","TDarkmode") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+
+
+
 //Toggles for Staff
 //Developers
 
