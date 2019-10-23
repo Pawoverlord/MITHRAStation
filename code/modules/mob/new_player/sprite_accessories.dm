@@ -102,6 +102,11 @@
 		icon_state = "hair_long_bedhead"
 		flags = HAIR_TIEABLE
 
+	bedheadlonger
+		name = "Bedhead Longer"
+		icon_state = "hair_long_bedhead_old"
+		flags = HAIR_TIEABLE
+
 	beehive
 		name = "Beehive"
 		icon_state = "hair_beehive"
