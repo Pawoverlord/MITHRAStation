@@ -35,9 +35,9 @@
 			message_admins("[key_name_admin(src)] has attempted to advertise in OOC: [msg]")
 			return
 		//VOREStation Add - No talking during voting
-		if(SSvote && SSvote.mode)
-			to_chat(src,"<span class='danger'>OOC is not allowed during voting.</span>")
-			return
+		//if(SSvote && SSvote.mode)
+			//to_chat(src,"<span class='danger'>OOC is not allowed during voting.</span>")
+			//return
 		//VOREStation Add End
 
 	log_ooc(msg, src)
