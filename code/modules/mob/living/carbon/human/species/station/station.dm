@@ -51,7 +51,7 @@
 	item_slowdown_mod = 0.25
 	mob_size = MOB_LARGE
 	blood_volume = 840
-	bloodloss_rate = 0.75
+	//bloodloss_rate = 0.75	//Unathi Rebalance Attempt #1 --raceport
 	num_alternate_languages = 3
 	secondary_langs = list(LANGUAGE_UNATHI)
 	name_language = LANGUAGE_UNATHI
