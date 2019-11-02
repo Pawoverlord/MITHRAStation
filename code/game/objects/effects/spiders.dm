@@ -62,6 +62,24 @@
 		icon_state = "stickyweb2"
 	return ..()
 
+
+/obj/effect/spider/stickyweb/CanPass(atom/movable/mover, turf/target)
+	if(istype(mover, /mob/living/simple_mob/animal/giant_spider))
+		return TRUE
+	else if(istype(mover, /mob/living))
+		var/mob/living/carbon/human/human_mover = mover
+		if(istype(human_mover.species, /datum/species/spider))//spider people dont get stuck in webs
+			return TRUE
+		else if(istype(mover, /mob/living))
+			if(prob(50))
+				to_chat(mover, span("warning", "You get stuck in \the [src] for a moment."))
+				return FALSE
+	else if(istype(mover, /obj/item/projectile))
+		return prob(30)
+	return TRUE
+
+
+/*
 /obj/effect/spider/stickyweb/CanPass(atom/movable/mover, turf/target)
 	if(istype(mover, /mob/living/simple_mob/animal/giant_spider))
 		return TRUE
@@ -72,6 +90,7 @@
 	else if(istype(mover, /obj/item/projectile))
 		return prob(30)
 	return TRUE
+*/
 
 /obj/effect/spider/eggcluster
 	name = "egg cluster"
